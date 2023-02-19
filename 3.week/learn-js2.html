@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h> deneme1-2</h>
+<script>
+var sayılar=[1,2,3,4,5,6]
+//dizileri oluşturmak için []
+//console.log(sayılar[2])
+sayılar.push(7,8);
+document.write(sayılar) 
+//push ile ekleme yapılır
+//pop() methodu dizinin son elemanının shift() methodu ilk elemanı siler
+//reverse( ) metodu: Dizi elemanlarını tersten sıralamak için kullanılır.
+
+var sehirler=["İst","Ank", "Bartın","Zong"]
+for(i=0;i<10;i++){
+    console.log(sehirler[i]+ "selam"+(i+1))
+
+}
+sehirler.forEach(function(sehirler,a){
+    console.log(a,sehirler)
+})
+var fonksiyonlar= [
+    function(a){console.log("hello",(a+2))},
+    function(a){console.log("hello1",a)}]
+fonksiyonlar[0](22)
+/////////////////////////////////////////////77
+
+var ogrenci={
+    adı:"Sude",
+    soyadı:"Karakuş",
+}
+document.write(ogrenci.adı)
+/////7
+
+var a=2;
+while(a<10){
+    console.log(a);
+    a=a+1;
+}
+</script>
+</body>
+</html>

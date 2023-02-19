@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="lib/script.js"></script>
+  </head>
+
+<div style="margin: 0 auto; width: 140px; height: auto; background-color: darkblue; border-radius: 5px; padding: 5px">
+
+  <body style="background-color:lightblue" text="black">
+    <form name ="calculator">
+     <p style="color:white;"> HESAP MAKİNESİ </p>
+
+      <input type="button" value="1" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='1'">
+      <input type="button" value="2" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='2'">
+      <input type="button" value="3" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='3'">
+      <br>
+      <input type="button" value="4" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='4'">
+      <input type="button" value="5" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='5'">
+      <input type="button" value="6" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='6'">
+      <br>
+      <input type="button" value="7" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='7'">
+      <input type="button" value="8" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='8'">
+      <input type="button" value="9" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='9'">
+      <input type="button" value="0" style="background-color:rgb(245, 151, 151); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='0'">   
+      <br>
+      <input type="button" value="+" style="background-color:rgb(204, 61, 61); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='+'">
+      <input type="button" value="-" style="background-color:rgb(204, 61, 61); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='-'">
+      <input type="button" value="*" style="background-color:rgb(204, 61, 61); height:25px;width:30px;border-radius: 4px" onclick= "document.calculator.ans.value+='*'">
+      <input type="button" value="/" style="background-color:rgb(204, 61, 61); height:25px;width:30px; border-radius: 4px" onclick= "document.calculator.ans.value+='/'">
+ 
+      <br>   
+      <input type="reset" style="background-color:rgb(141, 51, 51);height:20px;width:65px;" value="AC">
+      <input type="button" value="=" style="background-color:rgb(129, 32, 32);height:20px;width:30px;" onclick= "document.calculator.ans.value=eval(document.calculator.ans.value)">
+      <br>
+      <h3 style="color:white;"> SONUÇ </h3>
+      <input type ="textfield" name="ans" value="" style="height:20px;width:100px;"  >
+
+    </form>
+
+  </body>
+</div>
+</html>

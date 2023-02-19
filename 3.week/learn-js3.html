@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h> script</h>
+
+<script>
+//script altta olur 
+var kullanıcılar=[
+    {email:"mail1@gmail.com", sifre:1234},
+    {email:"mail2@gmail.com", sifre:5678},
+    {email:"mail5@gmail.com", sifre:5679},
+]
+var mesajlar=[
+    {email:"mail1@gmail.com", mesaj:"İyi Günler"},
+    {email:"mail2@gmail.com", mesaj:"İyi Günler1"},
+    {email:"mail@gmail.com", mesaj:"Günaydın"},
+    {email:"mail2@gmail.com", mesaj:"Selamlar"},
+]
+var email=prompt("email giriniz?")
+var sifre=prompt("Şifreniz")
+
+function kullaniciVarmi(email,sifre){
+    for(i=0; i<kullanıcılar.length;i++){
+        if(kullanıcılar[i].email== email && kullanıcılar[i].sifre==sifre){
+            return true
+        }
+    } return false
+    
+}
+
+function giris(){
+    if(kullaniciVarmi(email,sifre)){
+        console.log(mesajlar)
+    }else{
+        console.log("Yanlış kullanıcı adı veya şifresi giriniz")
+
+    }
+}
+giris()
+
+
+    /*
+    if((email==kullanıcılar[0].email &&	 sifre==kullanıcılar[0].sifre)
+    || (email==kullanıcılar[1].email && sifre==kullanıcılar[1].sifre)){
+        console.log(mesajlar)*/
+</script>
+
+
+</body>
+</html>
