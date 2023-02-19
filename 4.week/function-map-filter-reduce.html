@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+  </head>
+  <body>
+    <h1> </h1>
+
+
+  </body>
+  <script>
+    // farklı fonskiyon yazma methodları
+    
+    /*function selamla(){
+        console.log("Merhaba")
+
+    }
+    selamla()
+
+    var selam= function(){
+        console.log("Merhaba")}
+    selam()
+
+    const selam2=()=>{
+        console.log("Merhaba222")
+        console.log("MErhaba22")
+
+    }
+    selam2()
+    const selamver=(a)=>{console.log(a),console.log(2*a) }
+    selamver(22)
+    */
+   const dizi=[1,2,3,4]
+   let= kareDizisi=[]
+   //dizi.forEach(sayı=> console.log(sayı))
+   dizi.forEach(sayi=>{
+    kareDizisi.push(sayi**2) //.push eklemek için kullanılır
+   })
+   console.log(kareDizisi)
+
+   //map kullanmak
+   const mapDizi= dizi.map(sayi=>sayi*10)
+   console.log(mapDizi)
+
+   //filter kullanmak
+   const filterDizi= dizi.filter(sayi=> sayi>2)
+   console.log(filterDizi)
+
+   //reduce kullanmak dizideki int çarparak devam eder.
+   const reduceDizi= dizi.reduce((acc,sayi)=> {
+    return acc*sayi 
+   })
+   console.log(reduceDizi)
+ // reduce 100 den başlayarak dizide bulunan elemanları toplar.
+   const reduceDizi1= dizi.reduce((acc,sayi)=> {
+    return acc+sayi 
+   },100)
+   console.log(reduceDizi1)
+   
+
+
+    </script>
+
+</html>

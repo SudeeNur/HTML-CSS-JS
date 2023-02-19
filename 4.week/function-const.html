@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="lib/style.css">
+
+  </head>
+  <body>
+
+
+  </body>
+  <script>
+    //let isim="Sude" console.log(isim)    ilk başlarda bu şekilde yapardık.
+    var isim="Cemal"
+    function isimCagır(){
+        var isim="Enes"
+        console.log(isim)
+    }
+    console.log(isim) // console kısmına Cemali yazdırır
+    isimCagır() //fonksiyon içindeki Enes ismini çağırır
+
+    // console 10 yazdırır ama for(let i=0...) şeklinde kullanırsak 10 yazmaz. 
+    for(i=0;i<10;i++){
+        console.log(i)
+    }
+    console.log(i)
+
+    const deger=3.8; // atanan deger değişmez.
+    console.log(deger)
+    const isimler=["Sude","Ali"]
+    isimler.push("Yonca")
+    // isimler=["B"] const metodu diziyi değiştirmemize izin vermez.
+    console.log(isimler)
+  </script>
+
+</html>

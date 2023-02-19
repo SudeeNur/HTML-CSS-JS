@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+  <head>
+  </head>
+
+  <body>
+
+
+  </body>
+
+    <script >
+        class Personel{
+            constructor(ad,soyad){
+                this.ad=ad;
+                this.soyad=soyad;
+            }
+            kaydet(){
+                console.log("Personel kayıt işleminde isim kaydedildi.",this.ad)
+                
+            }
+        }
+
+        const personel1= new Personel("Sude", "Karakuş")
+        const personel2= new Personel("Fatma","Karakuş")
+        personel1.kaydet()
+        personel2.kaydet()
+
+
+
+    </script>
+  </body>
+</html>
